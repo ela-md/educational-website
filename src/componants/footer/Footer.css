@@ -1,0 +1,23 @@
+.footer{
+    background-color: rgb(255, 255, 255);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    
+}
+
+.footer p{
+    margin: 0;
+}
+
+
+.footer.dark{
+    background: var(--bg-dark-200);
+    
+}
+.design.dark{
+    color: white;
+}
+
