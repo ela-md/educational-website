@@ -1,13 +1,20 @@
-
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import HomePage from './pages/home/HomePage'
+import CartPage from './pages/cart/CartPage'
+import AboutePage from './pages/about/AboutPage'
+import ContactPage from './pages/contact/ContactPage'
 
 function App() {
 
 
   return (
-    <>
-      <h2>app</h2>
-    </>
+    <Routes>
+      <Route path='/' element={<HomePage/>} />
+      <Route path='/cart' element={<CartPage/>} />
+      <Route path='/about' element={<AboutePage/>} />
+      <Route path='/contact' element={<ContactPage/>} />
+    </Routes>
   )
 }
 
