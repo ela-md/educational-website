@@ -1,4 +1,4 @@
-.navabarContainer {
+.navbarContainer {
     background: #fff;
  }
  .navbar {
@@ -10,6 +10,8 @@
  ul {
     display: flex;
     gap: 8px;
+    list-style-type: none;
+    
  }
  ul li {
     padding: 10px;
@@ -50,7 +52,7 @@
     top: -8px;
     right: -8px;
  }
- .navabarContainer .cartIcon svg {
+ .navbarContainer .cartIcon svg {
     vertical-align: middle;
  }
  .darkModeIcon svg {
@@ -59,24 +61,24 @@
  }
  
  /* dark mode */
- .navabarContainer.dark {
+ .navbarContainer.dark {
     background: var(--bg-dark-200);
     color: var(--text-dark-100);
  }
- .navabarContainer.dark a {
+ .navbarContainer.dark a {
     color: var(--text-dark-200);
  }
  
- .navabarContainer.dark .cartIcon span {
+ .navbarContainer.dark .cartIcon span {
     background: var(--color-orange);
     color: var(--bg-dark-100);
  }
  
- .navabarContainer.dark .cartIcon {
+ .navbarContainer.dark .cartIcon {
     background: var(--bg-dark-100);
  }
  
- .navabarContainer.dark .navbar .icons {
+ .navbarContainer.dark .navbar .icons {
     color: var(--text-dark-200);
  }
  

@@ -1,5 +1,7 @@
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import {BsCart} from "react-icons/bs"
+import { MdOutlineDarkMode , MdOutlineLightMode} from "react-icons/md"
 
 function Navbar () {
 
