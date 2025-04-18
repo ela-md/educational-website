@@ -2,11 +2,21 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import {BsCart} from "react-icons/bs"
 import { MdOutlineDarkMode , MdOutlineLightMode} from "react-icons/md"
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleTheme } from '../../Redux/slices/global'
 
 function Navbar () {
 
+const {theme} = useSelector(store => store.global)
+const dispatch = useDispatch()
+
+const changeTheme = () => {
+    dispatch(toggleTheme(theme))
+}
+
+
     return(
-       <div className="navbarContainer">
+       <div className={`navbarContainer ${theme}`}>
         <div className="navbar container">
             <ul>
                 <li>
@@ -25,8 +35,8 @@ function Navbar () {
                     <BsCart size='25px'/></Link>
                     <span>5</span>
                 </span>
-                <span className='darlModeIcon'>
-                  <MdOutlineDarkMode size='25px' />
+                <span className='darkModeIcon'>
+                  {theme == "light" ? (<MdOutlineDarkMode size='25px' onClick={changeTheme}/>) : <MdOutlineLightMode size='25px' onClick={changeTheme}/>}
                 </span>
             </div>
         </div>

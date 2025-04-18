@@ -5,7 +5,10 @@ const globalSlice = createSlice({
     initialState : {theme : 'light'},
     reducers : {
         toggleTheme : (state, action) => {
-
+          if(action.payload == 'light')
+            return {theme : 'dark'}
+            else
+            return {theme : 'light'}
         }
     }
 })
