@@ -1,0 +1,68 @@
+{
+    "courses": [
+       {
+          "id": "1",
+          "title": "Tailwind css (project based)",
+          "image": "https://dl.next1code.ir/images//redux/courses/tailwind.jpg",
+          "teacher": " Donald McLean ",
+          "price": 899000,
+          "studentCount": 60
+       },
+       {
+          "id": "2",
+          "title": "Node js (project based)",
+          "image": "https://dl.next1code.ir/images//redux/courses/nodejs.jpg",
+          "teacher": " Jenna Rogers ",
+          "price": 34990,
+          "studentCount": 56
+       },
+       {
+          "id": "3",
+          "title": "Next js (project based)",
+          "image": "https://dl.next1code.ir/images//redux/courses/nextjs.jpg",
+          "teacher": "Bruce Raymond ",
+          "price": 27990,
+          "studentCount": 90
+       },
+       {
+          "id": "4",
+          "title": " Regex (project based)",
+          "image": "https://dl.next1code.ir/images//redux/courses/regex.jpg",
+          "teacher": "Barbara Dawson ",
+          "price": 2990,
+          "studentCount": 231
+       },
+       {
+          "id": "5",
+          "title": "npm package manager",
+          "image": "https://dl.next1code.ir/images//redux/courses/npm.jpg",
+          "teacher": "Brandon Coffey ",
+          "price": 1990,
+          "studentCount": 260
+       },
+       {
+          "id": "6",
+          "title": "React libraries",
+          "image": "https://dl.next1code.ir/images//redux/courses/react-lib.jpg",
+          "teacher": " Sarah Mueller",
+          "price": 7990,
+          "studentCount": 70
+       },
+       {
+          "id": "7",
+          "title": "Git, Github (project based) ",
+          "image": "https://dl.next1code.ir/images//redux/courses/github.jpg",
+          "teacher": "Peter Odom ",
+          "price": 5990,
+          "studentCount": 396
+       },
+       {
+          "id": "8",
+          "title": "Redux (project based)",
+          "image": "https://next1code.ir/wp-content/uploads/2023/11/redux-course-cover-1.jpg",
+          "teacher": " Anders Hoffman",
+          "price": 12990,
+          "studentCount": 140
+       }
+    ]
+ }
