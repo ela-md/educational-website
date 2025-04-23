@@ -1,11 +1,12 @@
 
+import CoursesIcons from '../../components/coursesIcons/CoursesIcons'
 import './HomePage.css'
 
 function HomePage () {
 
     return (
         <>
-        <h1>HomePage</h1>
+        <CoursesIcons />
         </>
     )
 }
