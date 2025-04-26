@@ -11,7 +11,7 @@ const {theme} = useSelector(store => store.global)
       <>
          <div className={`courseCard ${theme}`}>
             <div className='cardHeader'>
-               <img src='https://dl.next1code.ir/images//redux/courses/tailwind.jpg' />
+               <img src='https://th.bing.com/th/id/OIP.s5j5kFK-urpNTrVLlv9-ogHaEK?rs=1&pid=ImgDetMain' />
             </div>
             <div className='cardBody'>
                <h4 className='courseTitle'>Project based learning (tailwind css)</h4>
@@ -33,7 +33,7 @@ const {theme} = useSelector(store => store.global)
             </div>
             <div className='cardFooter'>
                <button> register </button>
-               <span className='price'>199000</span>
+               <span className='price'>199 $</span>
             </div>
          </div>
       </>
