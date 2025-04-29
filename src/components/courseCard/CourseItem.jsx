@@ -3,7 +3,7 @@ import { FaRegSmile } from "react-icons/fa"
 import { FaUsers } from "react-icons/fa"
 import { useSelector } from "react-redux"
 
-function CourseItem() {
+function CourseItem({title, price, id, image, teacher, studentCount}) {
 
 const {theme} = useSelector(store => store.global)
 
@@ -11,20 +11,20 @@ const {theme} = useSelector(store => store.global)
       <>
          <div className={`courseCard ${theme}`}>
             <div className='cardHeader'>
-               <img src='https://th.bing.com/th/id/OIP.s5j5kFK-urpNTrVLlv9-ogHaEK?rs=1&pid=ImgDetMain' />
+               <img src={image}/>
             </div>
             <div className='cardBody'>
-               <h4 className='courseTitle'>Project based learning (tailwind css)</h4>
+               <h4 className='courseTitle'>{title}</h4>
                <p className='courseDesc'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                <div className='courseInfo'>
                   <div className='courseTeacher'>
                      <span>
                         <FaRegSmile />
                      </span>
-                     <p>Jane Doe</p>
+                     <p>{teacher}</p>
                   </div>
                   <div className='courseStudent'>
-                     <p>60</p>
+                     <p>{studentCount}</p>
                      <span>
                         <FaUsers />
                      </span>
@@ -33,7 +33,7 @@ const {theme} = useSelector(store => store.global)
             </div>
             <div className='cardFooter'>
                <button> register </button>
-               <span className='price'>199 $</span>
+               <span className='price'>{price} $</span>
             </div>
          </div>
       </>

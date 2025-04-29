@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import cart from './slices/cart'
-import courses from './slices/course'
+import courses from './slices/courses'
 import global from './slices/global'
 
 const store = configureStore({

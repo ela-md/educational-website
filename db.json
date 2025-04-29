@@ -5,7 +5,7 @@
           "title": "Tailwind css (project based)",
           "image": "https://dl.next1code.ir/images//redux/courses/tailwind.jpg",
           "teacher": " Donald McLean ",
-          "price": 899000,
+          "price": 899,
           "studentCount": 60
        },
        {
@@ -13,7 +13,7 @@
           "title": "Node js (project based)",
           "image": "https://dl.next1code.ir/images//redux/courses/nodejs.jpg",
           "teacher": " Jenna Rogers ",
-          "price": 34990,
+          "price": 334,
           "studentCount": 56
        },
        {
@@ -21,7 +21,7 @@
           "title": "Next js (project based)",
           "image": "https://dl.next1code.ir/images//redux/courses/nextjs.jpg",
           "teacher": "Bruce Raymond ",
-          "price": 27990,
+          "price": 279,
           "studentCount": 90
        },
        {
@@ -29,7 +29,7 @@
           "title": " Regex (project based)",
           "image": "https://dl.next1code.ir/images//redux/courses/regex.jpg",
           "teacher": "Barbara Dawson ",
-          "price": 2990,
+          "price": 299,
           "studentCount": 231
        },
        {
@@ -37,7 +37,7 @@
           "title": "npm package manager",
           "image": "https://dl.next1code.ir/images//redux/courses/npm.jpg",
           "teacher": "Brandon Coffey ",
-          "price": 1990,
+          "price": 199,
           "studentCount": 260
        },
        {
@@ -45,7 +45,7 @@
           "title": "React libraries",
           "image": "https://dl.next1code.ir/images//redux/courses/react-lib.jpg",
           "teacher": " Sarah Mueller",
-          "price": 7990,
+          "price": 799,
           "studentCount": 70
        },
        {
@@ -53,15 +53,15 @@
           "title": "Git, Github (project based) ",
           "image": "https://dl.next1code.ir/images//redux/courses/github.jpg",
           "teacher": "Peter Odom ",
-          "price": 5990,
+          "price": 599,
           "studentCount": 396
        },
        {
           "id": "8",
           "title": "Redux (project based)",
-          "image": "https://next1code.ir/wp-content/uploads/2023/11/redux-course-cover-1.jpg",
+          "image": "https://miro.medium.com/v2/resize:fit:1200/1*8vDTQKhEmn_2_TVZ-u8mQw.jpeg",
           "teacher": " Anders Hoffman",
-          "price": 12990,
+          "price": 129,
           "studentCount": 140
        }
     ]
