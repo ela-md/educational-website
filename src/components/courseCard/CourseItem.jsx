@@ -1,11 +1,21 @@
 import "./CourseItem.css"
 import { FaRegSmile } from "react-icons/fa"
 import { FaUsers } from "react-icons/fa"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+import { addToCart } from "../../Redux/slices/cart"
 
 function CourseItem({title, price, id, image, teacher, studentCount}) {
 
 const {theme} = useSelector(store => store.global)
+const {data} = useSelector(store => store.courses)
+const dispatch = useDispatch()
+
+const clickHandler = ()=> {
+   const course = data.find(course => course.id == id)
+   dispatch(addToCart(course))
+
+   
+}
 
    return (
       <>
@@ -32,7 +42,7 @@ const {theme} = useSelector(store => store.global)
                </div>
             </div>
             <div className='cardFooter'>
-               <button> register </button>
+               <button onClick={clickHandler}>add to cart</button>
                <span className='price'>{price} $</span>
             </div>
          </div>

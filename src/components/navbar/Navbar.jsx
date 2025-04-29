@@ -5,14 +5,19 @@ import { MdOutlineDarkMode , MdOutlineLightMode} from "react-icons/md"
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleTheme } from '../../Redux/slices/global'
 
+
 function Navbar () {
 
 const {theme} = useSelector(store => store.global)
+const {addedToCart} = useSelector(store => store.cart)
 const dispatch = useDispatch()
+
 
 const changeTheme = () => {
     dispatch(toggleTheme(theme))
 }
+
+
 
 
     return(
@@ -33,7 +38,7 @@ const changeTheme = () => {
                 <span className='cartIcon'>
                     <Link to='/cart'>
                     <BsCart size='25px'/></Link>
-                    <span>5</span>
+                    {addedToCart > 0 ? (<span>{addedToCart}</span>) : ('')}
                 </span>
                 <span className='darkModeIcon'>
                   {theme == "light" ? (<MdOutlineDarkMode size='25px' onClick={changeTheme}/>) : <MdOutlineLightMode size='25px' onClick={changeTheme}/>}
