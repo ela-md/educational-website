@@ -12,7 +12,10 @@ export const fetchCourses = createAsyncThunk("courses/fetchCoursesStatus", async
 
 export const coursesSlice = createSlice({
    name: "courses",
-   initialState: [],
+   initialState: {
+      data : [],
+      loading : false
+   },
    reducers: {
       // getCourses: (state, action) => {
       //    // code
@@ -28,8 +31,14 @@ export const coursesSlice = createSlice({
       // }
    },
    extraReducers: (builder) => {
-      builder.addCase(fetchCourses.fulfilled, (state, action) => action.payload)
+      builder.addCase(fetchCourses.fulfilled, (state, action) => {
+         state.data = action.payload
+         state.loading = false
+      })
     
+      builder.addCase(fetchCourses.pending , (state, action) =>{
+         state.loading = true
+      })
       
    }
 })
