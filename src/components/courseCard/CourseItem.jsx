@@ -3,22 +3,32 @@ import { FaRegSmile } from "react-icons/fa"
 import { FaUsers } from "react-icons/fa"
 import { useDispatch, useSelector } from "react-redux"
 import { addToCart } from "../../Redux/slices/cart"
+import toast, { Toaster } from 'react-hot-toast';
 
 function CourseItem({title, price, id, image, teacher, studentCount}) {
 
 const {theme} = useSelector(store => store.global)
 const {data} = useSelector(store => store.courses)
+const {addedProducts} = useSelector(store => store.cart)
 const dispatch = useDispatch()
 
 const clickHandler = ()=> {
+if(isProductExistInCart()){
+   toast.error('added already')
+}else{
+   toast.success('course successfuly added')
    const course = data.find(course => course.id == id)
    dispatch(addToCart(course))
+}}
 
-   
+const isProductExistInCart = ()=>{
+  return addedProducts.some(product => product.id == id)
 }
+
 
    return (
       <>
+       <Toaster position="top-right"/>
          <div className={`courseCard ${theme}`}>
             <div className='cardHeader'>
                <img src={image}/>
