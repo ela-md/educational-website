@@ -1,7 +1,20 @@
+
+import { useDispatch } from 'react-redux';
 import './CartItem.css'
 import { MdDelete } from 'react-icons/md'
+import { removeFromCart } from '../../Redux/slices/cart';
 
-function CartItem ({image, title, price}){
+
+
+function CartItem ({id, image, title, price}){
+
+  const dispatch = useDispatch()
+
+const removeHandler = () => {
+  dispatch(removeFromCart({id, price}))
+  
+}
+   
     
     return (
        <div className="cartItem">
@@ -10,7 +23,7 @@ function CartItem ({image, title, price}){
             <p>{title}</p>
         </div>
         <div className="left">
-           <MdDelete size='25px' />
+           <MdDelete size='25px' onClick={removeHandler} />
            <p>{price.toLocaleString()} $</p>
         </div>
        </div>

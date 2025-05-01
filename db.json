@@ -5,7 +5,7 @@
           "title": "Tailwind css (project based)",
           "image": "https://dl.next1code.ir/images//redux/courses/tailwind.jpg",
           "teacher": " Donald McLean ",
-          "price": 899,
+          "price": 299,
           "studentCount": 60
        },
        {
@@ -13,7 +13,7 @@
           "title": "Node js (project based)",
           "image": "https://dl.next1code.ir/images//redux/courses/nodejs.jpg",
           "teacher": " Jenna Rogers ",
-          "price": 334,
+          "price": 899,
           "studentCount": 56
        },
        {
@@ -21,7 +21,7 @@
           "title": "Next js (project based)",
           "image": "https://dl.next1code.ir/images//redux/courses/nextjs.jpg",
           "teacher": "Bruce Raymond ",
-          "price": 279,
+          "price": 899,
           "studentCount": 90
        },
        {
@@ -45,7 +45,7 @@
           "title": "React libraries",
           "image": "https://dl.next1code.ir/images//redux/courses/react-lib.jpg",
           "teacher": " Sarah Mueller",
-          "price": 799,
+          "price": 499,
           "studentCount": 70
        },
        {
@@ -61,7 +61,7 @@
           "title": "Redux (project based)",
           "image": "https://miro.medium.com/v2/resize:fit:1200/1*8vDTQKhEmn_2_TVZ-u8mQw.jpeg",
           "teacher": " Anders Hoffman",
-          "price": 129,
+          "price": 299,
           "studentCount": 140
        }
     ]
