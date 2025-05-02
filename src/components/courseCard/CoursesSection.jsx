@@ -7,7 +7,7 @@ import { fetchCourses } from "../../Redux/slices/courses"
 function CoursesSection() {
    const { theme } = useSelector((store) => store.global)
    const dispatch = useDispatch()
-   const {data, loading} = useSelector((store) => store.courses)
+   const {data, loading, errorMessage} = useSelector((store) => store.courses)
 
    useEffect(() => {
       dispatch(fetchCourses())
@@ -24,11 +24,12 @@ function CoursesSection() {
             <h2 className={`newestCourses ${theme}`}>our courses</h2>
             <div className='row'>
             {loading ? (<h2>loading...</h2> ) : (
-              data.map((course) => (
+            errorMessage ? <h2>{errorMessage}</h2> :
+            (data.map((course) => (
                <div className="col" key={course.id}>
                   <CourseItem {...course} />
                </div>
-              ))
+              )))
             )}
                
             </div>
