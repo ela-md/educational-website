@@ -4,6 +4,8 @@ import { FaUsers } from "react-icons/fa"
 import { useDispatch, useSelector } from "react-redux"
 import { addToCart } from "../../Redux/slices/cart"
 import toast, { Toaster } from 'react-hot-toast';
+import { fetchCourseById } from "../../Redux/slices/course"
+import { Link } from "react-router-dom"
 
 function CourseItem({title, price, id, image, teacher, studentCount}) {
 
@@ -25,13 +27,21 @@ const isProductExistInCart = ()=>{
   return addedProducts.some(product => product.id == id)
 }
 
+const getCourseInfoHandler = () => {
+dispatch(fetchCourseById(id))
+
+}
+
 
    return (
       <>
        <Toaster position="top-right"/>
          <div className={`courseCard ${theme}`}>
             <div className='cardHeader'>
-               <img src={image}/>
+               <Link to={`/SingleCourse/${id}`}>
+               <img src={image} onClick={getCourseInfoHandler} />
+               </Link>
+               
             </div>
             <div className='cardBody'>
                <h4 className='courseTitle'>{title}</h4>

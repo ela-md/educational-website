@@ -13,10 +13,7 @@ function CoursesSection() {
       dispatch(fetchCourses())
    } , [])
 
-   // {
-   //    type : 'courses/fetchCoursesStatus/fulfilled',
-   //    payload : courses
-   // }
+   
 
    return (
       <div className='coursesSectionContainer'>

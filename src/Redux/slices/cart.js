@@ -10,6 +10,7 @@ const cartSlice = createSlice({
             state.total += action.payload.price
             state.addedProducts.push(action.payload)    
         },
+        
         removeFromCart: (state, action) => {
 
           const filteredProducts = state.addedProducts.filter(product => product.id !== action.payload.id)

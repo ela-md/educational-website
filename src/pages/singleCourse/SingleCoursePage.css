@@ -1,0 +1,44 @@
+.singleCoursePage{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   
+}
+
+.itemContainer {
+   margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.cardHeader img {
+    max-width: 100%;
+ }
+ 
+ .price{
+    font-weight: bold;
+    font-size: larger;
+    padding: 20px;
+ }
+
+
+ /* dark */
+ 
+
+ .itemContainer.dark{
+    background-color: var(--bg-dark-200);
+    color: var(--text-dark-200);
+ }
+
+ .itemContainer.dark .title {
+   color: white;
+ }
+ 
+ .itemContainer.dark .courseInfo{
+    color: var(--text-dark-200);
+ }
+ 

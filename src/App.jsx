@@ -7,6 +7,7 @@ import ContactPage from './pages/contact/ContactPage'
 import Navbar from './components/navbar/Navbar'
 import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
+import SingleCoursePage from './pages/singleCourse/SingleCoursePage'
 
 function App() {
 
@@ -24,6 +25,7 @@ const {theme} = useSelector(store => store.global)
       <Route path='/cart' element={<CartPage/>} />
       <Route path='/about' element={<AboutePage/>} />
       <Route path='/contact' element={<ContactPage/>} />
+      <Route path='/SingleCourse/:singleCourseId' element={<SingleCoursePage/>}/>
     </Routes>
   
   </>
